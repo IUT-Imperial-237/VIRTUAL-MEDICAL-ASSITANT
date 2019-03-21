@@ -1,0 +1,45 @@
+.hiSlider-SliderApp .dottedThumbContainer {
+  position: absolute;
+  width: 100%;
+  z-index: 50;
+}
+.hiSlider-SliderApp .dottedThumbContainer .dottedThumbCover {
+  position: relative;
+}
+.hiSlider-SliderApp .dottedThumbContainer .hi-buttons {
+  height: 100%;
+  max-width: 100%;
+  list-style-type: none;
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.hiSlider-SliderApp .dottedThumbContainer .hi-buttons li {
+  cursor: pointer;
+  float: left;
+}
+.hiSlider-SliderApp .dottedThumbContainer .hi-buttons div {
+  display: block;
+  text-align: center;
+}
+.hiSlider-SliderApp .dottedThumbContainer .hi-buttons div span {
+  display: block;
+}
+.hiSlider-SliderApp .hiSlider-dotted-thumb {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.hiSlider-SliderApp .hiSlider-dotted-thumb img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.hiSlider-SliderApp .dotted-control {
+  position: relative;
+}

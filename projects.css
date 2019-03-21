@@ -1,0 +1,27 @@
+/*virtual medical*/
+.navbar-header .navbar-brand{
+color:#F08080;
+font-size: 20px;
+padding-top: 20px;
+position: relative;
+left: -15px;
+padding-right: 40px;
+}
+.media .row{
+	padding-top: 50px;
+	background-color: #87CEFA;
+	padding-bottom: 50px;
+}
+.media .row{
+	position: relative;
+	bottom: -180px;
+}
+.media .container{
+	position: relative;
+	z-index: -1000px;
+}
+
+.col-sm-4 a:hover {
+    opacity: 0.4;
+}
+
