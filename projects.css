@@ -1,21 +1,33 @@
 /*virtual medical*/
+
+#slide{
+position: relative;
+width: 100%; 
+height:600px; 
+margin-top: 55px;
+}
+#hislider1{
+width: 100%; 
+height:600px; 
+position: absolute;
+}
+
 @media screen and (max-width: 600px) {
   #logo1{
     display: none;
   }
-  #hislider1{
-  	top:80px;
+    #hislider1{
+width:100%;
+height: 220px;
+bottom: 0px;
+
+  }
+  #slide{
+height: 220px;
+width:100%;
+   
   }
 }
-#hislider1{
-
-width: 100%; 
-height:600px; 
-position: relative;
-top: 55px; 
-margin: 0 auto;
-}
-
 .navbar-header .navbar-brand{
 color:#F08080;
 font-size: 20px;
