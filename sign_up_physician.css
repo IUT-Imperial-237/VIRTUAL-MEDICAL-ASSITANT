@@ -1,0 +1,20 @@
+
+h1{
+    text-align: center;
+    padding-top: 125px;
+    padding-bottom: 50px;
+    color:#008B8B;
+}
+input,select,option{
+    width: 100%;
+    margin-bottom: 10px;
+}
+label{
+    color:#008B8B;
+}
+button{
+    margin-left: 40%;
+    color:wheat;
+    background-color: #1E90FF;
+    padding: 10px;
+}

@@ -1,4 +1,7 @@
 /*virtual medical*/
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 #slide{
 position: relative;
