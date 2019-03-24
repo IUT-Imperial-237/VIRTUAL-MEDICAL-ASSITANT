@@ -15,6 +15,11 @@ label{
 button{
     margin-left: 40%;
     color:wheat;
-    background-color: #1E90FF;
-    padding: 10px;
+    background-color: #008B8B;
+    padding: 5px;
+    position: relative;
+    top: -10px;
+}
+.col-lg-5{
+    border: 8px outset #008B8B;
 }
