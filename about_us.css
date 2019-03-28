@@ -1,6 +1,15 @@
-.intro{
-
-	text-align: center;
+*{
+    box-sizing:border-box;
+}
+p{
+    font-size:18px;
+}
+.margin-bot{
+    margin-bottom:30px;
+    margin-top:5px;
+}
+.intro {
+    text-align: center;
 }
 h1, h3, h4{
 	color: #8B0000;
@@ -10,9 +19,14 @@ h1, h3, h4{
 
 .mission{
  		text-align: center;
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	width: 50em;
 	
  	}
+.row1{
+    margin-top:5%;
+}
+.background {
+    background: rgba(255,255,255,.9);
+}
+img{
+    border:5px outset black;
+}
