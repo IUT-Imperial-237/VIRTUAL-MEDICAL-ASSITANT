@@ -1,6 +1,11 @@
 *{
     box-sizing:border-box;
 }
+@media screen and (max-width: 800px) {
+    .logo2 {
+        display: none;
+    }
+}
 p{
     font-size:18px;
 }
@@ -31,8 +36,3 @@ h1, h3, h4{
     border: 5px outset black;
 }
 
-@media screen and (max-width: 800px) {
-    .logo2 {
-        display: none;
-    }
-}
