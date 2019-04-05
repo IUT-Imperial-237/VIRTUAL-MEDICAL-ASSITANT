@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    padding-top: 125px;
+    padding-bottom: 50px;
+    color:#008B8B;
+}
+input,select,option{
+    width: 100%;
+    margin-bottom: 2%;
+}
+label{
+    color: #008B8B;
+}
+
+fieldset{
+    padding: 10%;
+    border: 8px outset #008B8B;
+} 
+
+#patient{
+    position: relative;
+}
+
+#field5,#field6{
+    display: none;
+}
+.btn{
+    color: #008B8B;
+    margin-left: 3%;
+    margin-right: 3%;
+  
+
+}

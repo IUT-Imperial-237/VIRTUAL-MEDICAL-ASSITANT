@@ -7,19 +7,28 @@ h1{
 }
 input,select,option{
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 2%;
 }
 label{
-    color:#008B8B;
+    color: #008B8B;
 }
-button{
-    margin-left: 40%;
-    color:wheat;
-    background-color: #008B8B;
-    padding: 5px;
-    position: relative;
-    top: -10px;
-}
-.col-lg-5{
+
+fieldset{
+    padding: 10%;
     border: 8px outset #008B8B;
+} 
+
+#doctor{
+    position: relative;
+}
+
+#field2,#field3{
+    display: none;
+}
+.btn{
+    color: #008B8B;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+ 
+
 }
