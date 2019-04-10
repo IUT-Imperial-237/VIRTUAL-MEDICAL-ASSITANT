@@ -7,10 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap.min.css">
   <script src="jquery.min.js"></script>
+  <script src="umd_popper.min.js"></script>
   <script src="bootstrap.min.js"></script>
   <link rel="stylesheet" href="font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="projects.css">
   <link rel="stylesheet" type="text/css" href="emergency_care.css">
+  <!--aos library-->
+  <link rel="stylesheet" href="aos/css/styles.css" />
+  <link rel="stylesheet" href="aos/dist/aos.css" />
+
 </head>
 
 <body>
@@ -60,43 +65,49 @@
   </nav>
 
 
-
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-sm-4">
       </div>
-      <div class="col-sm-4">
-        <h1 class="h1">EMERGENCY FIRST AID</h1>
+      <div class="col-sm-4"><br><br><br><br><br><br><br>
+        <h1 class="h1">EMERGENCY FIRST AID</h1><br><br><br><br><br>
       </div>
       <div class="col-sm-4">
       </div>
     </div>
+  </div>
 
+  <div class="container">
     <div class="row">
       <div class="col-sm-6">
-        <h2>What to do if you or someone else may be having a <strong> Heart Attack or Stroke</strong>? ​How to Survive
-          ?</h2>
-        <h2>If a <strong> Heart Attack or Stroke</strong> happens and you're alone, what should you do and what
-          shouldn't you do?</h2>
-        <h2>​How to give <strong> CPR</strong> (cardiopulmonary resuscitation)?</h2>
+        <div data-aos="fade-up" data-aos-duration="3000">
+          <h2>What to do if you or someone else may be having a <strong> Heart Attack or Stroke</strong>? ​How to
+            Survive
+            ?</h2>
+          <h2>If a <strong> Heart Attack or Stroke</strong> happens and you're alone, what should you do and what
+            shouldn't you do?</h2>
+          <h2>​How to give <strong> CPR</strong> (cardiopulmonary resuscitation)?</h2>
+        </div>
       </div>
       <div class="col-sm-6">
-        <img src="imges/emergency care.jpg" alt="emergency care" width="90%">
-      </div>
-
-      <div class="row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6">
-          <br><br><br><br><br>
-          <h2 class="h2">Six CPR Steps Everyone Should Know</h2><br><br><br>
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+          <img src="imges/emergency care.jpg" alt="emergency care" width="90%">
         </div>
-        <div class="col-sm-3"></div>
       </div>
+    </div>
+  </div>
 
-      <div class="row">
+  <br><br><br><br><br>
+  <div data-aos="zoom-in-down">
+  <h2 class="h2">Six CPR Steps Everyone Should Know</h2><br><br><br>
+  </div>
+  <div class="container">
+    <div class="row">
 
-        <div class="col-sm-4">
-          <div class="card">
+      <div class="col-sm-4">
+        <div class="card">
+          <div data-aos="fade-down-right">
+
             <img class="card-img-top" src="imges/Position your hand.jpg" alt="Position your hand" style="width:100%">
             <div class="card-body">
               <h3 class="card-title">1. Position your hand</h3>
@@ -105,8 +116,10 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="card">
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
             <img class="card-img-top" src="imges/Interlock fingers.jpg" alt="Interlock fingers" style="width:100%">
             <div class="card-body">
               <h3 class="card-title">2. Interlock fingers</h3>
@@ -116,8 +129,10 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="card">
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div data-aos="fade-down-left">
             <img class="card-img-top" src="imges/Give chest compressions.jpg" alt="Give chest compressions"
               style="width:100%">
             <div class="card-body">
@@ -129,11 +144,14 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
 
-      <div class="row">
-
-        <div class="col-sm-4">
-          <div class="card">
+      <div class="col-sm-4">
+        <div class="card">
+          <div data-aos="fade-up-right">
             <img class="card-img-top" src="imges/Open the airway.jpg" alt="Open the airway" style="width:100%">
             <div class="card-body">
               <h3 class="card-title">4. Open the airway</h3>
@@ -142,8 +160,10 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="card">
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div data-aos="fade-up" data-aos-duration="3000">
             <img class="card-img-top" src="imges/Interlock fingers.jpg" alt="Interlock fingers" style="width:100%">
             <div class="card-body">
               <h3 class="card-title">5. Give rescue breaths</h3>
@@ -153,8 +173,10 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="card">
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div data-aos="fade-up-left">
             <img class="card-img-top" src="imges/Watch chest fall.jpg" alt="Watch chest fall" style="width:100%">
             <div class="card-body">
               <h3 class="card-title">6. Watch chest fall</h3>
@@ -165,32 +187,40 @@
           </div>
         </div>
       </div>
-
-
-      <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-5">
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-5">
+        <div data-aos="zoom-in-right">
           <video width=100% poster="" controls>
             <source src="videos/How Give CPR.mp4" type="video/mp4">
             <source src="videos/How Give CPR.ogg" type="video/ogg">
             Your browser does not support the video tag.
           </video>
         </div>
-        <div class="col-sm-5">
+      </div>
+      <div class="col-sm-5">
+        <div data-aos="zoom-in-left">
           <video width=100% poster="" controls>
             <source src="videos/Pediatric CPR.mp4" type="video/mp4">
             <source src="videos/Pediatric CPR.ogg" type="video/ogg">
             Your browser does not support the video tag.
           </video>
         </div>
-        <div class="col-sm-1"></div>
-      </div><br><br><br><br>
+      </div>
+      <div class="col-sm-1"></div>
+    </div><br><br><br><br>
+  </div>
 
-
-
-      <h2 class="h2">What to do if you or someone else may be having a heart attack</h2><br><br>
-      <div class="row">
-        <div class="col-sm-4">
+  <div data-aos="zoom-in-up">
+  <h2 class="h2">What to do if you or someone else may be having a heart attack</h2><br><br>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div data-aos="zoom-out">
           <ul>
             <li>
               <h4>
@@ -209,7 +239,9 @@
             </li>
           </ul>
         </div>
-        <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+        <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
           <ul>
             <li>
               <h4>
@@ -227,7 +259,9 @@
             </li>
           </ul>
         </div>
-        <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+        <div data-aos="zoom-out-left">
           <ul>
             <li>
               <h4>
@@ -244,24 +278,30 @@
           </ul>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8">
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
           <video width=100% poster="" controls>
             <source src="videos/Heart Attack.mp4" type="video/mp4">
             <source src="videos/Heart Attack.ogg" type="video/ogg">
             Your browser does not support the video tag.
           </video>
         </div>
-        <div class="col-sm-2"></div>
-      </div><br><br><br><br>
-
-
-      <h2 class="h2">What to do if you or someone else may be having a Strokes?</h2><br><br>
-
-      <div class="row">
-        <div class="col-sm-6">
+      </div>
+      <div class="col-sm-2"></div>
+    </div><br><br><br><br>
+  </div>
+  <div data-aos="zoom-out-up">
+  <h2 class="h2">What to do if you or someone else may be having a Strokes?</h2><br><br>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div data-aos="flip-up">
           <h3>After calling 911:</h3>
           <ul>
             <li>
@@ -278,18 +318,23 @@
             </li>
           </ul>
         </div>
-        <div class="col-sm-1"></div>
-        <div class="col-sm-4">
+      </div>
+      <div class="col-sm-1"></div>
+      <div class="col-sm-4">
+        <div data-aos="flip-down">
           <img src="imges/stroke.PNG" alt="stroke" width="100%">
           <p>Understanding what to do when someone suffers a stroke can make a significant difference to their chances
             of survival or recovery.</p>
         </div>
-        <div class="col-sm-1"></div>
       </div>
+      <div class="col-sm-1"></div>
+    </div>
 
-
-      <div class="row">
-        <div class="col-sm-7">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7">
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
           <h3>If the person is conscious:</h3>
           <ul>
             <li>
@@ -323,7 +368,9 @@
             </li>
           </ul>
         </div>
-        <div class="col-sm-5">
+      </div>
+      <div class="col-sm-5">
+        <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
           <h3>If the person is unconscious:</h3>
           <ul>
             <li>
@@ -353,12 +400,14 @@
           <h4>Current practice for CPR is chest compressions only. 911 can instruct you how to do this if you do not
             know how.</h4>
         </div>
-
       </div>
+    </div>
+  </div>
+  <div class="container">
 
-
-      <div class="row">
-        <div class="col-sm-6">
+    <div class="row">
+      <div class="col-sm-6">
+          <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <br><br><br>
           <h3>The recovery position:</h3><br>
           <h4>If someone is unconscious, or if their airway is not completely clear, place them in the recovery
@@ -388,18 +437,19 @@
             </li>
           </ol>
         </div>
-        <div class="col-sm-6">
-            <br><br><br><br>
+      </div>
+      <div class="col-sm-6">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <br><br><br><br>
           <img src="imges/recoveryposition.PNG" alt="recoveryposition" width="100%">
           <p>The recovery position should be used if someone is unconscious, or if their airways may not be clear.</p>
         </div>
       </div>
 
-
-
-
     </div>
   </div>
+
+
 
 
 
@@ -449,6 +499,12 @@
 
     </div>
 
+    <script src="aos/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
 </body>
 
 </html>

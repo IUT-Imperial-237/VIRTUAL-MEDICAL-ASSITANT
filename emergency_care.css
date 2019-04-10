@@ -1,4 +1,14 @@
+
+
+.h2{
+    background-color: #00BFFF;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
+}
+
 .h1{
-    padding-top:30%;
-    padding-bottom:15%;
+text-align: center;
+color: #4682B4;
 }
