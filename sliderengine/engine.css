@@ -1,0 +1,397 @@
+.hiSlider-SliderApp {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.hiSlider-SliderApp img,
+.hiSlider-SliderApp div,
+.hiSlider-SliderApp span,
+.hiSlider-SliderApp a,
+.hiSlider-SliderApp li,
+.hiSlider-SliderApp ul,
+.hiSlider-SliderApp canvas {
+  max-width: none;
+  max-height: none;
+  width: auto;
+  height: auto;
+  left: auto;
+  top: auto;
+  list-style-type: none;
+  text-decoration: none;
+  overflow: visible;
+  border-spacing: 0;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-image: none;
+}
+
+.hiSlider-SliderApp.SliderAppFullScreen, .hiSlider-SliderApp .SliderAppFullScreen {
+  position: fixed !important;
+  left: 0  !important;
+  top: 0  !important;
+}
+
+.hiSlider-SliderApp .SliderContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+.hiSlider-SliderApp .actionContainer {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  background-repeat: repeat;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQIW2NkAAIAAAoAAggA9GkAAAAASUVORK5CYII=);
+}
+
+.hiSlider-SliderApp .hiSlider-swipe {
+  overflow: hidden !important;
+}
+
+.hiSlider-SliderApp .hiSlider-swipe-container {
+  overflow: visible !important;
+}
+
+.hiSlider-SliderApp .loading {
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+}
+
+.hiSlider-SliderApp .loading-box {
+  background-color: #FFFFFF;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 36px !important;
+  height: 36px !important;
+  z-index: 999;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  margin: -18px 0px 0px -18px !important;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 3px #292929;
+  -moz-box-shadow: 1px 1px 3px #292929;
+  -ms-box-shadow: 1px 1px 3px #292929;
+  -o-box-shadow: 1px 1px 3px #292929;
+  box-shadow: 1px 1px 3px #292929;
+}
+
+.hiSlider-SliderApp .hideControlButton {
+  z-index: -10 !important;
+}
+
+.hiSlider-SliderApp .SliderContainer .dataContainer, .SliderContainer .hiSlider-swipe-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+}
+
+.hiSlider-SliderApp .dataWrapper {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+.hiSlider-SliderApp .data {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.hiSlider-SliderApp .playvideo_btn {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: left top;
+  margin-top: -32px;
+  margin-left: -32px;
+  height: 64px;
+  width: 64px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  cursor: pointer;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.hiSlider-SliderApp .hi-close-btn {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: left top;
+  margin-top: -16px;
+  margin-right: -16px;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  -moz-transition: -moz-transform 300ms ease-in-out;
+  -ms-transition: -ms-transform 300ms ease-in-out;
+  -o-transition: -o-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+}
+
+.hiSlider-SliderApp .hi-swipe-info-box {
+  position: absolute;
+  z-index: 1300;
+  left: 50%;
+  top: 50%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 3px #292929;
+  -moz-box-shadow: 1px 1px 3px #292929;
+  -ms-box-shadow: 1px 1px 3px #292929;
+  -o-box-shadow: 1px 1px 3px #292929;
+  box-shadow: 1px 1px 3px #292929;
+}
+
+.hiSlider-SliderApp .hi-close-btn:hover {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.hiSlider-SliderApp .playvideo_btn:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+.hiSlider-SliderApp .SliderContainer .playingVideo {
+  left: 0% !important;
+  top: 0% !important;
+}
+
+.hiSlider-SliderApp .lightbox_btn {
+  background-repeat: no-repeat;
+  background-position: left top;
+  margin-top: -32px;
+  margin-left: -32px;
+  height: 64px;
+  width: 64px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: none;
+  cursor: pointer;
+}
+
+.hiSlider-SliderApp .SliderContainer:hover .lightbox_btn {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.hiSlider-SliderApp .dataContainer .errorData {
+  background-color: #000000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  position: absolute;
+  display: inline-block;
+  left: 0%;
+  top: 0%;
+  color: white;
+}
+
+
+.hiSlider-SliderApp .SliderContainer .playerWrapper {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+}
+
+.hiSlider-SliderApp .SliderContainer .playerError {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:100%;
+  height:30px;
+  max-height: 30px;
+  overflow: hidden;
+  background-color:black;
+  opacity:0.6;
+  z-index:10;
+  color:white;
+  text-align:center;
+  line-height:30px;
+}
+
+.hiSlider-SliderApp .SliderContainer .hiSlider-tooltips {
+  position: absolute;
+  max-width: 50%;
+  margin: 3px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  padding: 2px 4px;
+  z-index: 20;
+  background-color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.hiSlider-SliderApp .SliderContainer .hiSlider-tooltips>span {
+  cursor: pointer;
+  font:12px Arial,Tahoma,Helvetica,sans-serif;
+  display: block;
+}
+
+.hiSlider-SliderApp .SliderContainer .hiSlider-tooltips:hover {
+  opacity: 0.8 !important;
+  filter: alpha(opacity=80) !important;
+}
+
+.hiSlider-SliderApp .playvideo_thumb {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.hiSlider-SliderApp .hi-text {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  -o-user-select: text;
+  user-select: text;
+}
+
+.hiSlider-SliderApp .hiSlider-shadow {
+  display: none;
+  position:absolute;
+  top:100%;
+  left:0%;
+  width:100%;
+  z-index: -1;
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.hiSlider-SliderApp .hi-slider-menu {
+  position: absolute;
+  display: none;
+  z-index: 99999;
+  border: 1px solid #ccc;
+  box-shadow: 1px 2px 5px #333;
+  background-color: #eee;
+}
+
+.hiSlider-SliderApp .hi-about {
+  color: #333;
+  font-family: Verdana;
+  font-size: 11px;
+  padding: 0px 5px 2px 20px;
+  height: 20px;
+  line-height: 20px;
+  display: block;
+  width: 145px;
+  cursor: pointer;
+}
+
+.hiSlider-SliderApp .hi-about:hover {
+  background-color: #39f;
+  color: #fff;
+}
+
+.hiSlider-SliderApp .hi-about-context-background {
+  background-color: #000000;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.hiSlider-SliderApp .hi-about-context {
+  width: 300px;
+  position: absolute;
+  display: none;
+  left: 50%;
+  top: 50%;
+  z-index: 9999;
+  margin-left: -150px;
+  border: 2px #fff solid;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 1px 2px 5px #333;
+  font-family: Verdana;
+  padding: 20px;
+  color: #FFFFFF;
+}
+
+.hiSlider-SliderApp .hi-about-context a {
+  cursor: pointer;
+}
+
+.hiSlider-SliderApp .hi-about-context a:hover {
+  text-decoration: underline;
+}
+
+.hiSlider-SliderApp .hi-visible {
+  overflow: visible !important;
+}
+
+.hiSlider-SliderApp .hi-hidden {
+  overflow: hidden !important;
+}

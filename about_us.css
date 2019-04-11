@@ -1,0 +1,38 @@
+*{
+    box-sizing:border-box;
+}
+@media screen and (max-width: 800px) {
+    .logo2 {
+        display: none;
+    }
+}
+p{
+    font-size:18px;
+}
+.margin-bot{
+    margin-bottom:30px;
+    margin-top:5px;
+}
+.intro {
+    text-align: center;
+}
+h1, h3, h4{
+	color: #8B0000;
+	text-align: center;
+	
+}
+
+.mission{
+ 		text-align: center;
+	
+ 	}
+.row1{
+    margin-top:5%;
+}
+.background {
+    background: rgba(255,255,255,0.9);
+}
+.card-img-top {
+    border: 5px outset black;
+}
+

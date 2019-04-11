@@ -1,0 +1,44 @@
+
+h4{
+	color: white;
+}
+label{
+	color: white;
+}
+.input{
+	width: 70%;
+	margin: auto;
+
+
+}
+.icon{
+	width: 40px;
+	height :40px;
+}
+.heart-icon{
+	width: 200px;
+	height: 200px;
+	margin-bottom: 0px;
+}
+.row-marg{
+	height:100vh;
+}
+.heart1{
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.9);
+	border: 8px inset blue;
+
+}
+.log{
+	color: white;
+}
+
+.marg{
+
+	height: 10vh;
+	
+}
+#error{
+	color: red;
+	font-size: 18px;
+}

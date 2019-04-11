@@ -1,0 +1,27 @@
+		                                                      
+.marg{
+   height: 15vh;
+   background-color: red;
+}
+
+.bb{
+   height:110px;
+   margin-bottom: 0px;
+   
+}
+.btn-xs{
+   width: 100px;
+   
+}
+#tohide{
+   display: none;
+}
+#tb{
+   font-size:30px;
+}
+a{
+   text-decoration: none;
+}
+#todisplay a{
+   padding-top: 25%;
+}
