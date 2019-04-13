@@ -5,10 +5,20 @@
     text-align: center;
     padding-top: 2%;
     padding-bottom: 2%;
+  
     
 }
 
 .h1{
 text-align: center;
-color: #4682B4;
+color: #5F9EA0;
+
+}
+
+ #startleft{
+     background-color: rgba(240, 255, 255,0.5);
+ }
+ 
+h3{
+   color: #4682B4;
 }
