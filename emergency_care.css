@@ -17,8 +17,14 @@ color: #5F9EA0;
 
  #startleft{
      background-color: rgba(240, 255, 255,0.5);
+     text-align: center;
+     margin-bottom: 2%;
  }
  
 h3{
    color: #4682B4;
+   text-align: center;
+}
+.im1{
+    height: 350px;
 }
