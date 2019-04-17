@@ -1,3 +1,9 @@
+<?php
+   session_start() ;
+  //$_SESSION["tt"] ="";
+   //$_SESSION["eremail"]="";
+   //$_SESSION["erpwd"]="" ;
+?>
 <!DOCTYPE html>
 <html>
 
@@ -14,7 +20,8 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="imges/logo.jpg" alt="Logo" style="width:30px;height: 25px; position: relative;">
@@ -60,6 +67,8 @@
     </div>
   </nav>
 
+
+
   <div class="container">
     <div class="media">
       <h1>PATIENT SIGN UP</h1>
@@ -69,25 +78,26 @@
           <button class="btn" id="btn_field4" disabled>PERSON_INFOS</button>
           <button class="btn" id="btn_field5">MEDICAL_RECORD</button>
           <button class="btn" id="btn_field6" disabled>REGISTER</button><br><br>
-          <form action="">
+          
+          <form  id="form" method="post" action="valide_patient.php">
             <fieldset id="field4">
               <label for="fname">First Name:</label><br>
-              <input type="text" name="" id="fname" required><br>
+              <input type="text" name="fname" id="fname" required><br>
               <label for="lname">Last Name:</label><br>
-              <input type="text" name="" id="lname" required><br>
+              <input type="text" name="lname" id="lname" required><br>
               <label for="dob">Date Of Birth:</label><br>
-              <input type="date" name="" id="dob" required><br>
+              <input type="date" name="dob" id="dob" required><br>
               <label for="gender">Gender:</label><br>
-              <select name="" id="gender"><br>
+              <select name="gender" id="gender"><br>
                 <option>Male</option>
                 <option>Female</option>
               </select><br>
               <label for="country">Country:</label><br>
-              <select>
-                <option value="Bangladesh">Bangladesh</option>
+              <select name="country"  value="Bangladesh">
+                <option  >Bangladesh</option>
               </select><br>
               <label for="city">City:</label><br>
-              <select name="" id="city">
+              <select name="city" id="city">
                 <option>Barisal</option>
                 <option>Chittagong</option>
                 <option>Comilla</option>
@@ -101,16 +111,16 @@
                 <option>Sylhet</option>
               </select><br>
               <label for="address">Address:</label><br>
-              <input type="text" name="" id="address" required><br>
+              <input type="text" name="address" id="address" required><br>
               <label for="profession">Profession:</label><br>
-              <input type="text" name="" id="profession" required><br>
+              <input type="text" name="profession" id="profession" required><br>
             </fieldset>
 
             <fieldset id="field5">
               <label for="allergies">Allergies:</label><br>
-              <input type="text" name="" id="allergies" required><br>
+              <input type="text" name="allergies" id="allergies" required><br>
               <label for="blood_group">Blood Group:</label><br>
-              <select name="" id="blood_group">
+              <select name="blood_group" id="blood_group">
                 <option>O−</option>
                 <option>O+</option>
                 <option>A−</option>
@@ -121,30 +131,31 @@
                 <option>AB+</option>
               </select><br>
               <label for="height">Height:</label><br>
-              <input type="text" name="" id="height" required><br>
+              <input type="number" name="height" min=30 max=300 id="height" required  placeholder="in Cm"><br>
               <label for="weight">Weight:</label><br>
-              <input type="text" name="" id="weight" required><br>
+              <input type="number" name="weight" id="weight" min = 1 required placeholder="in Kg"><br>
               <label for="family_medical_history">Family Medical History:</label><br>
-              <input type="textarea" name="" id="family_medical_history" placeholder="" required><br>
+              <input type="textarea" name="family_medical_history" id="family_medical_history" placeholder="any type of disease recurrent in your family eg: diabete type2,cancer herpertension etc..." required><br>
               <label for="medical_history">Medical History:</label><br>
-              <input type="text" name="" id="medical_history" placeholder="" required><br>
+              <input type="text" name="medical_history" id="medical_history" placeholder="have you suffer from any diseases before eg:diabete,heart attack etc.." required><br>
               <label for="present_medical_condition">Present Medical Condition:</label><br>
-              <input type="text" name="" id="present_medical_condition" placeholder="example:diabetes,hypertension"
+              <input type="text" name="present_medical_condition" id="present_medical_condition" placeholder="example:diabetes,hypertension"
                 required><br>
-              <label for="present_medication_prescription">Present Medication Prescription:</label><br>
-              <input type="text" name="" id="present_medication_prescription" placeholder="" required><br>
+              <label for="present_medical_prescription">Present Medication Prescription:</label><br>
+              <input type="text" name="present_medical_prescription" id="present_medication_prescription" placeholder="are you under any medical prescription? eg:insuling,paracetamol etc.." required><br>
               <label for="extra_information">Extra Information:</label><br>
-              <input type="text" name="" id="extra_information" placeholder="" required><br>
+              <input type="text" name="extra_information" id="extra_information" placeholder="" required><br>
 
             </fieldset>
 
             <fieldset id="field6">
               <label for="email">Email address:</label><br>
-              <input type="email" name="" id="email" placeholder="example@gmail.com" required><br>
-              <label for="pwd">Password:</label><br>
-              <input type="password" name="" id="pwd" required><br>
+              <input type="email" name="email" id="email" placeholder="example@gmail.com" required><br>
+              <label for="password">Password:</label><br>
+              <input type="password" name="password" id="pwd" required><br>
               <label for="conpwd">Confirm Password:</label><br>
-              <input type="password" name="" id="conpwd" required><br><br>
+              <input type="password" name="conpwd" id="conpwd" required><br><br>
+             
               <input type="submit" name="" value="Sign Up">
 
             </fieldset>
@@ -157,6 +168,28 @@
         </div>
     </div>
   </div>
+  <div class="container">
+      <div class="row">
+      <div class="col-sm-12">
+      <?php 
+    
+      
+      if ($_SERVER["REQUEST_METHOD"] == "GET")
+      {
+        
+        echo  "<p>".$_SESSION["tt"] ."</p>";
+        echo   "<p>" .$_SESSION["eremail"]."</p>" ;
+        echo  "<p>". $_SESSION["erpwd"]."</p>" ;
+        
+     //   $_SESSION["tt"] ="";
+  // $_SESSION["eremail"]="";
+  // $_SESSION["erpwd"]="" ;
+      }
+     
+      ?>
+      </div>
+      </div>
+      </div>
 
   <div class="media">
     <div class="row">
