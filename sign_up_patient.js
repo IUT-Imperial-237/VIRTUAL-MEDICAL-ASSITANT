@@ -46,3 +46,22 @@ function hide1(e) {
     form3.style.display = "none";
 
 }
+
+   /* var  submit = document.getElementById("submit");
+    submit.addEventListener("click",check);
+      function check(e){
+        e.preventDefault();
+        var   p1 = document.getElementById("pwd");
+        var   p2 = document.getElementById("pwd");
+        console.log(p1.value);
+           if(p1.value!=p2.value)
+           { console.log(p1.value);
+              erp = document.getElementById("erpwd");
+              erp.style.visibility ="visible";
+             
+
+           }*/
+
+
+
+      

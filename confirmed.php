@@ -57,7 +57,7 @@ session_start() ;
           <li><a href="emergency_care.html">Emergency Care</a></li>
           <li><a href="symptoms.html">Symptoms</a></li>
           <li><a href="neares_hospital.html">Find Neares Hospital</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="blog.php">Blog</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">

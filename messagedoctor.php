@@ -61,7 +61,7 @@ session_start() ;
 					<li><a href="emergency_care.html">Emergency Care</a></li>
 					<li><a href="symptoms.html">Symptoms</a></li>
 					<li><a href="neares_hospital.html">Find Neares Hospital</a></li>
-					<li><a href="blog.html">Blog</a></li>
+					<li><a href="blog.php">Blog</a></li>
 						<li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Profile <span class="caret"></span></a>
             <ul class="dropdown-menu">

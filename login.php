@@ -1,6 +1,10 @@
 <?php 
 session_start() ;
-
+$_GET["error"]="";
+if(isset($_SESSION["user"][0])){
+   header("location: viewprofile.php?");
+    
+  }
 ?>
 <!DOCTYPE html>
 <html>
@@ -48,7 +52,7 @@ session_start() ;
           <li><a href="emergency_care.html">Emergency Care</a></li>
           <li><a href="symptoms.html">Symptoms</a></li>
           <li><a href="neares_hospital.html">Find Neares Hospital</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="blog.php">Blog</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
@@ -99,7 +103,7 @@ session_start() ;
    if ($conn->connect_error) {
      die("Connection failed: " . $conn->connect_error);
    } 
-   echo "Connected successfully";
+  
    $sql = "SELECT *   FROM users where username ='$email' and password = '$password' ";
    $sql2 = "SELECT *   FROM personInfo where email ='$email' ";
    $sql3 = "SELECT *   FROM patientrecord where patientId ='$email' ";
