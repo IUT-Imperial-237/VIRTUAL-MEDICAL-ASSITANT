@@ -1,3 +1,8 @@
+.titre{
+		text-align: center;
+		color: #5F9EA0;
+		
+}
 
 #H2{
 	color:#236B8E;
@@ -14,9 +19,15 @@
 	text-align: center;
 }
 
-#symptoms{
+.symptoms{
 
-	font-size: 100px;
-	font-family: Verdana;
-	background-color:#DCDCDC
+	background-color: rgba(240, 255, 255,0.5);
+	text-align: center;
+	margin-bottom: 2%;
+}
+
+#startleft{
+	background-color: rgba(240, 255, 255,0.5);
+	text-align: center;
+	margin-bottom: 2%;
 }
